@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _To Do list_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _This aplication is a dummy of a phone list, Nov 4, 2020._
 
 #### By _**Amanda Otero**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This is a dummy of a phone list using objects and prototypes._
 
 ## Setup/Installation Requirements
 
@@ -16,9 +16,8 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * _To view the project open index HTML on you favorite browser_
 * _To edit open you favorite text editor_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
-
 ## Specs
+
 Describe: ToDo(task)
 
 Test: "It will create a space to hold a variable"
@@ -29,14 +28,19 @@ Describe: ToDoList()
 Test: "It will create an array to hold all To Do task"
 Expect: ().toEqual("buy bananas");
 
-Describe: .addTask
+Describe: .addTask()
 
-Code: ToDoList.prototype.addTask
-Test
+Test: "It will take the user's input and add it to the task list through the toDoList function"
+Expect: addTask(bananas).toEqual("buy bananas");
+
+Describe: .assignId
+
+Test: "It will assign an ID number to task added to the to do list"
+Expect: assignId(bananas).toEqual(1);
+
+
 
 ## Known Bugs
-
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
 
 ## Support and contact details
 

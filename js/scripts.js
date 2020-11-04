@@ -25,13 +25,13 @@ ToDoList.prototype.assignId = function() {
 }
 
 ToDoList.prototype.deleteTask = function(id) {
-  for (let i = 0; i<this.tasks.length; i++) {
-    if(this.tasks[i]) {
+  for (let i = 0; i < this.tasks.length; i++) {
+    // if(this.tasks[i]) {
       if(this.tasks[i].id == id) {
         delete this.tasks[i];
+        // Does something goes here?
         return true;
       }
-    }
   };
   return false;
 }
